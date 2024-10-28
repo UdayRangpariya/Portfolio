@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact - Uday Portfolio</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .contact-bg {
+            background-image: url(assets/images/modern-2.jpg);
+            background-position: center center;
+            background-size: cover;
+            position: relative;
+            padding: 120px 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            padding: 40px;
+            border-radius: 10px;
+            margin-top: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+            text-decoration: none; /* Added this for the <a> tag */
+            cursor: pointer;
+        }
+
+        .contact-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateX(10px);
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            margin-right: 20px;
+        }
+
+        .contact-icon i {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .contact-info {
+            flex-grow: 1;
+        }
+
+        .contact-info h5 {
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .contact-info p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0;
+        }
+
+        /* Updated styles for nested links */
+        .contact-info span {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item:hover .contact-info span {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
+        <div class="container">
+            <a class='navbar-brand logo'>
+                <h1>UDAY</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-bg" id="contact">
+        <div class="bg-overlay"></div>
+        <div class="container z-index">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <div class="text-white">
+                        <h1 class="fw-bold mb-4">Get In Touch</h1>
+                        <div class="section-title-border bg-white mx-auto"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-8">
+                    <div class="contact-box">
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/uday-rangpariya-a86085231" target="_blank" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="mdi mdi-linkedin"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h5>LinkedIn</h5>
+                                <span>Uday Rangpariya</span>
+                            </div>
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:udayrangpariya@gmail.com" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="mdi mdi-email"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h5>Email</h5>
+                                <span>udayrangpariya@gmail.com</span>
+                            </div>
+                        </a>
+
+                        <!-- Phone -->
+                        <a href="tel:+917383814414" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="mdi mdi-phone"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h5>Phone</h5>
+                                <span>+91 7383814414</span>
+                            </div>
+                        </a>
+
+                        <!-- X (Twitter) -->
+                        <a href="https://x.com/UdayRangpariya?t=r96U5aQkiFR-P4BQAseyTQ&s=09" target="_blank" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="mdi mdi-twitter"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h5>X (Twitter)</h5>
+                                <span>@UdayRangpariya</span>
+                            </div>
+                        </a>
+
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/7383814414" target="_blank" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="mdi mdi-whatsapp"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h5>WhatsApp</h5>
+                                <span>+91 7383814414</span>
+                            </div>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/uday.rangpariya?mibextid=ZbWKwL" target="_blank" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="mdi mdi-facebook"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h5>Facebook</h5>
+                                <span>Uday Rangpariya</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects - Uday Portfolio</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .projects-bg {
+            background-image: url(assets/images/modern-2.jpg);
+            background-position: center center;
+            background-size: cover;
+            position: relative;
+            padding: 120px 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .project-card {
+            background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(5px);
+            border-radius: 10px;
+            padding: 25px;
+            margin: 15px 0;
+            transition: all 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.05);
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translateX(10px);
+        }
+
+        .project-title {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .project-description {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .project-tech {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        .projects-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .projects-bg {
+                padding: 100px 0 60px;
+            }
+
+            .project-title {
+                font-size: 20px;
+            }
+
+            .project-description {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-nav sticky">
+        <div class="container">
+            <a class='navbar-brand logo'>
+                <h1>UDAY</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="projects-bg" id="projects">
+        <div class="bg-overlay"></div>
+        <div class="container z-index">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-white mb-4">My Projects</h2>
+                    <div class="section-title-border bg-white mx-auto"></div>
+                </div>
+            </div>
+            <div class="projects-container">
+                <!-- Project Cards -->
+                <div class="project-card" onclick="window.open('https://github.com/UdayRangpariya/Smart-Society-Management-System-main')">
+                    <h3 class="project-title">Smart Society Management System</h3>
+                    <p class="project-description">• Designed visually appealing user interfaces leveraging standard technologies (HTML,PHP,Python,SQL).
+                        <br><br>• Executed thorough cross-browser testing strategies that ensured seamless functionality on six different browser
+                        platforms; improved accessibility metrics based on feedback from diverse user groups throughout the development
+                        phase.
+                        <br><br>• Executed a strategy to implement responsive design across the website, leading to a 50% increase in loading speed on
+                        mobile devices, which directly contributed to a higher customer satisfaction rating.</p>
+                    <p class="project-tech">Technologies: HTML, PHP, Python. Database: MySql</p>
+                </div>
+
+                <div class="project-card" onclick="window.open('https://github.com/UdayRangpariya/Calculator')">
+                    <h3 class="project-title">Calculator in Java</h3>
+                    <p class="project-description">• This is a simple graphical calculator built using Java Swing. 
+                        <br><br>• It allows users to perform basic arithmetic operations like addition, subtraction, multiplication, and division. 
+                        <br><br>• The calculator features a clear display and buttons for input, making it easy to use for everyday calculations.</p>
+                    <p class="project-tech">Technologies: Java</p>
+                </div>
+
+                <!-- Portfolio Project Card -->
+                <div class="project-card" onclick="window.open('https://github.com/your-portfolio-project')">
+                    <h3 class="project-title">Portfolio</h3>
+                    <p class="project-description">• This portfolio project showcases my skills in creating responsive web pages using HTML, CSS, JavaScript, and Bootstrap.
+                        <br><br>• It features a clean design, easy navigation, and includes sections like about me, projects, and contact.
+                        <br><br>• The goal is to present my work and abilities in a simple and user-friendly way.</p>
+                    <p class="project-tech">Technologies: HTML, CSS, JavaScript. Framework: Bootstrap</p>
+                </div>
+
+                <div class="project-card" onclick="window.open('https://github.com/UdayRangpariya/To-do-List')">
+                    <h3 class="project-title">To-Do List</h3>
+                    <p class="project-description">• This project is a basic to-do list application created with HTML, CSS, and JavaScript. 
+                        <br><br>• Users can add tasks, mark them as complete, and remove them when finished. 
+                        <br><br>• It helps keep track of daily activities in an easy and organized way.</p>
+                    <p class="project-tech">Technologies: HTML, CSS, JavaScript</p>
+                </div>
+
+                <div class="project-card" onclick="window.open('https://github.com/UdayRangpariya/Calculator-using-JS')">
+                    <h3 class="project-title">Calculator in JS</h3>
+                    <p class="project-description">This calculator project is built using HTML, CSS, and JavaScript. 
+                        <br><br>• It allows users to perform basic arithmetic operations like addition, subtraction, multiplication, and division. 
+                        <br><br>• The design is user-friendly and responsive, making it easy to use on different devices.</p>
+                    <p class="project-tech">Technologies: HTML, CSS, JavaScript</p>
+                </div>
+
+                <!-- Temperature Converter Project Card -->
+                <div class="project-card" onclick="window.open('https://github.com/UdayRangpariya/Temperature-Convertor')">
+                    <h3 class="project-title">Temperature Converter</h3>
+                    <p class="project-description">• The Temperature Converter project allows users to convert temperatures between Celsius and Fahrenheit.
+                        <br><br>• It provides a simple interface for users to input a temperature in one unit and get the equivalent temperature in other units.
+                        <br><br>• This tool is helpful for quick temperature conversions in daily life or professional settings.</p>
+                    <p class="project-tech">Technologies: HTML, CSS, JavaScript</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+</body>
+</html>
